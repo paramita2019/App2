@@ -10,7 +10,10 @@
         <!-- Place new controls here -->
         <Label Text="Welcome Team ecoDB!" 
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" FontSize="Large" />
+           VerticalOptions="Start" FontSize="Medium" />
+        <Label Text="Climate Protection" 
+           HorizontalOptions="Center"
+           VerticalOptions="End" FontSize="Large" />
     </StackLayout>
 
 </ContentPage>
