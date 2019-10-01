@@ -4,16 +4,42 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="App2.MainPage">
+             x:Class="App2.MainPage"
+             Title="Welcome to ecoDB Climate Protection!">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome Team ecoDB!" 
+        <!-- <Image Source="logo.png"></Image> -->
+        <Label Text="COO2 Wallet" 
            HorizontalOptions="Center"
            VerticalOptions="Start" FontSize="Medium" />
         <Label Text="Climate Protection" 
            HorizontalOptions="Center"
            VerticalOptions="End" FontSize="Large" />
+        <Button Text="Credits Remaining" Clicked="onNonGreenPurchase"/>
+        <Button Text="Sustainability Rating 2019" Clicked="onclickRating"/>
+        
+        <TableView Intent="Data">
+            <TableRoot>
+                <TableSection Title="Personal Transaction Categories">
+                    <EntryCell Label="Diet" Text="80" />
+                    <EntryCell Label="Exercise" Text="50" />
+                    <EntryCell Label="Wellness" Text="30" />
+                    <EntryCell Label="Electricity/Gas/Hybrid Conveyance" Text="90" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+        <TableView Intent="Data">
+            <TableRoot>
+                <TableSection Title="Business Transaction Categories">
+                    <EntryCell Label="Automation" Text="80" />
+                    <EntryCell Label="Paperless" Text="50" />
+                    <EntryCell Label="Recycling" Text="30" />
+                    <EntryCell Label="Resources" Text="90" />
+                    <EntryCell Label="Employee Wellness" Text="90" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
     </StackLayout>
 
 </ContentPage>
