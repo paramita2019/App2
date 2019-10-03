@@ -17,5 +17,19 @@ namespace App2
         {
             InitializeComponent();
         }
+
+        public static int sustainabilityScore = 70;
+        public static int sustainabilityTotalCredits = 200;
+        public static void onclickRating(object sender, System.EventArgs e)
+        {
+            sustainabilityScore++;
+            ((Button)sender).Text = $"This Year's Sustainability Rating is {sustainabilityScore}";
+        }
+
+        public static void onNonGreenPurchase(object sender, System.EventArgs e)
+        {
+            sustainabilityTotalCredits--;
+            ((Button)sender).Text = $"Credits Remaining {sustainabilityTotalCredits}";
+        }
     }
 }
